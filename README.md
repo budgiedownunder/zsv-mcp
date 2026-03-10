@@ -185,6 +185,7 @@ Cursor MCP configuration. Cursor's support for `${workspaceFolder}` is inconsist
       "env": {
         "ZSV_PATH": "zsv",
         "LOG_LEVEL": "debug"
+      }
     }
   }
 }
@@ -206,6 +207,7 @@ Claude Desktop uses a user-level config file, not a repo-level one. Add the foll
       "env": {
         "ZSV_PATH": "zsv",
         "LOG_LEVEL": "debug"
+      }
     }
   }
 }
@@ -220,5 +222,5 @@ See [TOOL_REFERENCE.md](docs/TOOL_REFERENCE.md) for complete request and respons
 
 ## Development
 
-- Local editor setup: `SETUP.md`
-- Contribution workflow: `CONTRIBUTING.md`
+- Local editor setup: [`SETUP.md](./SETUP.md.md)
+- Contribution workflow: [`CONTRIBUTING.md](./CONTRIBUTING.md)
