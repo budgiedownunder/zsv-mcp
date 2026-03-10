@@ -222,7 +222,3 @@ See `docs/TOOL_REFERENCE.md` for complete request and response details.
 
 - Local editor setup: `SETUP.md`
 - Contribution workflow: `CONTRIBUTING.md`
-
-## Notes
-
-- The module path in `go.mod` currently uses `github.com/budgiedownunder/zsv-mcp`. Update this to your final GitHub org/user path when publishing.
