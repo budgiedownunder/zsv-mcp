@@ -1,0 +1,41 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+zsv-mcp
+
+# Test binaries
+*.test
+
+# Go coverage and profiling output
+*.out
+*.prof
+coverage.html
+
+# Go workspace (local multi-module development)
+go.work
+go.work.sum
+
+# Dependency vendoring (uncomment if not using vendor/)
+# vendor/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# Editors
+.idea/
+*.swp
+*.swo
+*~

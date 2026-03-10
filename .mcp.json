@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "zsv-mcp": {
+      "type": "stdio",
+      "command": "./zsv-mcp",
+      "args": [],
+      "env": {
+        "ZSV_PATH": "zsv",
+        "LOG_LEVEL": "debug"
+      }
+    }
+  }
+}

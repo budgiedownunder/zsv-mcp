@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__zsv-mcp__zsv_run",
+      "mcp__zsv-mcp__zsv_help"
+    ]
+  }
+}

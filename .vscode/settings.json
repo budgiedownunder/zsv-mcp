@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "zsv-mcp": {
+      "command": "${workspaceFolder}/zsv-mcp.exe",
+      "args": [],
+      "disabled": false,
+      "alwaysAllow": [],
+      "env": {
+        "ZSV_PATH": "zsv"
+      }
+    }
+  }
+}
