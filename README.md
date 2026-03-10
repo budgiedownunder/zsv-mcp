@@ -37,9 +37,9 @@ This project uses the official MCP Go SDK: `github.com/modelcontextprotocol/go-s
 |  |- tool_usage.go        # tool usage guidance prompt
 |- resources/
 |  |- tool_usage.go        # tool usage guidance resource
+|- sample_data/
+|  |- data.csv             # sample CSV for example prompts
 |- SETUP.md                # VS Code local setup notes
-|- test_data/
-|  |- data.csv             # sample CSV for tests and tool examples (e.g. zsv sql)
 |- tools/
 |  |- help.go              # zsv_help tool
 |  |- run.go               # zsv_run tool
@@ -223,6 +223,42 @@ See [TOOL_REFERENCE.md](docs/TOOL_REFERENCE.md) for complete request and respons
 
 - `zsv_run(cmd[])`
 - `zsv_help()`
+
+## Example Prompts
+
+The following prompts can be used with any MCP-compatible AI client (Claude, Cursor, VS Code Copilot, etc.) to exercise the zsv MCP tools. Most prompts explicitly name the MCP tool to use so that the AI does not scan project source files for context. The last one does not name the tool(s) explicitly and instead relies on the AI client deducing them from the MCP server and the guidance provided for it.
+
+For verification purposes, fresh prompts should be used for each one to ensure that the AI client is not influenced by prior prompt message results. During processing, you may see the AI client self-correct as it learns how to issue well-formed requests to the MCP server.
+
+### Verify installation
+
+> Using the zsv_help MCP tool, show me the zsv help text.
+
+The AI calls `zsv_help()` and returns the zsv CLI's top-level help output, listing available subcommands. If this fails, either the zsv MCP tooling is not registered, `zsv` is not on `PATH` or `ZSV_PATH` is not set correctly.
+
+### Select columns from a file
+
+> Using the zsv_run MCP tool, show me only the Name and Country columns from sample_data/data.csv.
+
+The AI calls `zsv_run` with the `select` subcommand to extract two columns and returns a filtered CSV.
+
+### Calculate the average of a column
+
+> Using the zsv_run MCP tool, calculate the average age of the people in sample_data/data.csv.
+
+The AI calls `zsv_run` using the `sql` subcommand with a query such as `select avg(cast([Age] as real)) from data`, then reports the result.
+
+### Multi-stage operation
+
+> Using the zsv_run MCP tool, select only the Name and Age columns from sample_data/data.csv, then sort the result by Age descending.
+
+The AI will decide how it handles this. It may decide to issue two `zsv_run` calls (`select` to narrow columns, then `sql` to sort) or to combine both operations into a single `sql` query. It will then report the final result.
+
+### Multi-stage operation (no specific MCP tool named)
+
+> Using zsv, select only the Name and Country columns from sample_data/data.csv, then sort the result by Name in ascending order.
+
+The AI will determine how to handle this, likely consulting the zsv MCP usage guide and ultimately executing a `sql` call via `zsv_run` to generate and then display the final result.
 
 ## Development
 
