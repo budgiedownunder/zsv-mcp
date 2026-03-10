@@ -2,33 +2,6 @@
 
 Thanks for contributing to `zsv-mcp`.
 
-## Prerequisites
-
-- Go 1.23+
-- `zsv` CLI available on your machine (or set `ZSV_PATH`)
-
-## Local Development
-
-1. Build the server:
-
-```bash
-go build -o zsv-mcp
-```
-
-2. Run tests:
-
-```bash
-go test ./...
-```
-
-3. Run the server manually:
-
-```bash
-./zsv-mcp
-```
-
-For VS Code MCP integration details, see `SETUP.md`.
-
 ## Code Guidelines
 
 - Keep tool handlers small and focused.
@@ -54,10 +27,5 @@ For VS Code MCP integration details, see `SETUP.md`.
   - what changed
   - why it changed
   - how it was tested
-- If you change tool inputs/outputs, update `docs/TOOL_REFERENCE.md` and `README.md` in the same PR.
+- If you change tool inputs/outputs, update [TOOL_REFERENCE.md](docs/TOOL_REFERENCE.md) and [README.md`](./README.md) in the same PR.
 
-## Versioning and Module Path
-
-- If you publish under a different GitHub org/user, update `go.mod` module path from:
-  - `github.com/budgiedownunder/zsv-mcp`
-  to your final repository path.

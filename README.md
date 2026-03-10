@@ -213,7 +213,7 @@ Claude Desktop uses a user-level config file, not a repo-level one. Add the foll
 
 ## Tool Summary
 
-See `docs/TOOL_REFERENCE.md` for complete request and response details.
+See [TOOL_REFERENCE.md](docs/TOOL_REFERENCE.md) for complete request and response details.
 
 - `zsv_run(cmd[])`
 - `zsv_help()`
