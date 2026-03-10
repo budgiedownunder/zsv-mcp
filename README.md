@@ -1,5 +1,7 @@
 # zsv-mcp
 
+[![CI](https://github.com/budgiedownunder/zsv-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/budgiedownunder/zsv-mcp/actions/workflows/ci.yml)
+
 A Go-based Model Context Protocol (MCP) server that exposes tools for the `zsv` CLI (see: https://github.com/liquidaty/zsv).
 
 This project uses the official MCP Go SDK: `github.com/modelcontextprotocol/go-sdk`.
