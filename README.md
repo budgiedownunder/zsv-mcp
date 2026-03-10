@@ -1,6 +1,7 @@
 # zsv-mcp
 
 [![CI](https://github.com/budgiedownunder/zsv-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/budgiedownunder/zsv-mcp/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A Go-based Model Context Protocol (MCP) server that exposes tools for the `zsv` CLI (see: https://github.com/liquidaty/zsv).
 
