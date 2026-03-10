@@ -129,6 +129,7 @@ Project-level MCP discovery file read by Claude Code. It registers `zsv-mcp` as 
       "env": {
         "ZSV_PATH": "zsv",
         "LOG_LEVEL": "debug"
+      }
     }
   }
 }
@@ -148,6 +149,7 @@ VS Code-specific MCP server configuration introduced in newer VS Code releases. 
       "env": {
         "ZSV_PATH": "zsv",
         "LOG_LEVEL": "debug"
+      }
     }
   }
 }

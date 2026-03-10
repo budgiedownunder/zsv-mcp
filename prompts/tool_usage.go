@@ -35,11 +35,11 @@ Examples:
 	Tool: zsv_run
 	Args: {"cmd":["count","data.csv"]}
 
-1) Input intent: "Run zsv sql with inline SQL"
+2) Input intent: "Run zsv sql with inline SQL"
 	Tool: zsv_run
 	Args: {"cmd":["sql","test.csv","select avg(cast([age] as real)) from data"]}
 
-2) Input intent: "Show zsv help"
+3) Input intent: "Show zsv help"
 	Tool: zsv_help
 	Args: {}
 
