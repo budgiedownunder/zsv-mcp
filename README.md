@@ -222,5 +222,5 @@ See [TOOL_REFERENCE.md](docs/TOOL_REFERENCE.md) for complete request and respons
 
 ## Development
 
-- Local editor setup: [`SETUP.md](./SETUP.md.md)
-- Contribution workflow: [`CONTRIBUTING.md](./CONTRIBUTING.md)
+- Local editor setup: [SETUP.md](./SETUP.md)
+- Contribution workflow: [CONTRIBUTING.md](./CONTRIBUTING.md)
