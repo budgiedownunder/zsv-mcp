@@ -4,9 +4,9 @@ This guide explains how to run `zsv-mcp` from VS Code Chat for local testing.
 
 For full project documentation, see:
 
-- `README.md`
-- `docs/TOOL_REFERENCE.md`
-- `CONTRIBUTING.md`
+- [README.md](./README.md)
+- [TOOL_REFERENCE.md](./docs/TOOL_REFERENCE.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Quick Start
 

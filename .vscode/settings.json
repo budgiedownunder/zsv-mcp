@@ -6,7 +6,8 @@
       "disabled": false,
       "alwaysAllow": [],
       "env": {
-        "ZSV_PATH": "zsv"
+        "ZSV_PATH": "zsv",
+        "LOG_LEVEL": "debug"
       }
     }
   }
