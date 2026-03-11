@@ -168,7 +168,11 @@ Workspace settings file that registers the server under the `mcpServers` key. Ea
       "command": "${workspaceFolder}/zsv-mcp",
       "args": [],
       "disabled": false,
-      "alwaysAllow": []
+      "alwaysAllow": [],
+      "env": {
+        "ZSV_PATH": "zsv",
+        "LOG_LEVEL": "debug"
+      }
     }
   }
 }
